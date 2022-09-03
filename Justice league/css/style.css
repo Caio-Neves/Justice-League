@@ -1,0 +1,148 @@
+.banner {
+  background-image: url(../cards/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  border-top: 1px solid transparent;
+  height: 125vh;
+  font-family: sans-serif;
+}
+.banner ul {
+  list-style: none;
+  text-align: right;
+  margin-right: 2%;
+  margin-top: 1%;
+}
+.banner ul li {
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.banner ul li a {
+  display: block;
+  padding: 1vh;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+.banner ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 1s ease-in-out;
+}
+.banner #content-banner {
+  margin: auto;
+  text-align: center;
+}
+.banner #content-banner h1 {
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px black;
+  font-size: 6rem;
+  margin-top: 5%;
+}
+.banner #content-banner p {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 4px solid darkred;
+  color: #ccc;
+  display: inline-block;
+  font-weight: bold;
+  padding: 2%;
+  margin-top: 5vh;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+main .content-section {
+  margin: auto;
+  margin-top: 3vh;
+  width: 70%;
+  overflow: auto;
+  padding: 2%;
+}
+main .content-section .card {
+  display: block;
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+}
+main .content-section .card a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+main .content-section .card a:hover p {
+  transition: 0.5s ease-out;
+  background-color: black;
+}
+main .content-section .card img {
+  width: 100%;
+  display: block;
+}
+main .content-section .card-1, main .content-section .card-2 {
+  margin-right: 12%;
+}
+main .content-section .card-4, main .content-section .card-5 {
+  margin-right: 12%;
+}
+main .content-section .card-1 {
+  background-color: #4C4C4C;
+}
+main .content-section .card-2 {
+  background-color: #F8C502;
+}
+main .content-section .card-3 {
+  background-color: #C13627;
+}
+main .content-section .card-4 {
+  background-color: #18ACE2;
+}
+main .content-section .card-5 {
+  background-color: #E77F1C;
+}
+main .content-section .card-6 {
+  background-color: #44A144;
+}
+main .content-section p {
+  padding-top: 10%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main #section-article {
+  width: 80%;
+  margin: auto;
+  padding-top: 2%;
+}
+main #section-article #title-article {
+  background-color: #A52A2A;
+  border-bottom: 3px solid black;
+  font-size: 4vh;
+  padding: 2%;
+}
+main #section-article p {
+  background-color: #E92727;
+  color: black;
+  font-weight: bolder;
+  font-size: 3vh;
+  padding: 2%;
+  letter-spacing: 1px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  padding-top: 2%;
+}/*# sourceMappingURL=style.css.map */

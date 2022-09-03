@@ -1,0 +1,127 @@
+@import "header";
+
+$colorTitleArticle: #A52A2A;
+$colorBackgroundArticle: #E92727;
+$black: black;
+$white: white;
+$grey: #ccc;
+
+@mixin background-card($name){
+    @if $name == batman{
+        background-color:#4C4C4C;
+    } @else if $name == aquaman {
+        background-color: #F8C502;
+    } @else if $name == flash{
+        background-color: #C13627;
+    } @else if $name == superman{
+        background-color: #18ACE2;
+    } @else if $name == mulher-maravilha{
+        background-color: #E77F1C;
+    } @else if $name == lanterna-verde{
+        background-color: #44A144;
+    }
+}
+
+*{
+    margin: 0;
+}
+body{
+    background-color: $black;
+}
+main{
+    width: 80%;
+    margin: auto;
+    color: $white;
+    
+    .content-section{
+        margin: auto;
+        margin-top: 3vh;
+        width: 70%;
+        overflow: auto;   
+        padding: 2%;
+        
+        .card{
+            display: block;
+            width: 25%;
+            float: left;
+            box-sizing: border-box;
+
+            a{
+                color: $white;
+                display: block;
+                text-decoration: none;
+                font-family: sans-serif;
+                letter-spacing: 1px;
+
+                &:hover{
+                    p{
+                        background-color: $black;
+                    }
+                }
+            }
+
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .card-1, .card-2{
+            margin-right: 12%;
+        }
+        .card-4, .card-5{
+            margin-right: 12%;
+        }
+        .card-1{
+            @include background-card(batman);
+        }
+        .card-2{
+            @include background-card(aquaman);
+        }
+        .card-3{
+            @include background-card(flash)
+        }
+        .card-4{
+            @include background-card(superman)
+        }
+        .card-5{
+            @include background-card(mulher-maravilha)
+        }
+        .card-6{
+            @include background-card(lanterna-verde)
+        }
+        p{
+            padding-top: 10%;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+    #section-article{
+        width: 80%;
+        margin: auto;
+        padding-top: 2%;
+
+        #title-article{
+            background-color: $colorTitleArticle;
+            border-bottom: 3px solid $black;
+            font-size: 4vh;
+            padding: 2%;
+        }
+
+        p{
+            background-color: $colorBackgroundArticle;
+            color: $black;
+            font-weight: bolder;
+            font-size: 3vh;
+            padding: 2%;
+            letter-spacing: 1px;
+        }
+    }
+}
+footer{
+    text-align: center;
+    color: $white;
+    padding-top: 2%;
+}
